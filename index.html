@@ -1,0 +1,45 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Fundación Shekina</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="/">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="/about">Sobre Nosotros</a></li>
+            <li class="nav-item"><a class="nav-link" href="/contact">Contacto</a></li>
+        </ul>
+    </div>
+</nav>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundación Shekina</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <h1>Fundación Shekina</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/about">Sobre Nosotros</a></li>
+                <li><a href="/contact">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Defendemos los derechos de niños, niñas, adolescentes y mujeres.</h2>
+        <p>Bienvenidos a la Fundación Shekina, donde trabajamos para apoyar a las víctimas de maltrato.</p>
+        <img src="{{ url_for('static', filename='images/imagen1.jpg') }}" alt="Imagen de la Fundación">
+        <img src="{{ url_for('static', filename='images/imagen2.jpg') }}" alt="Otra Imagen de la Fundación">
+    </main>
+    <footer>
+        <p>Contacto: abg Dayana Inte yanez, Coordinadora</p>
+    </footer>
+</body>
+</html>
